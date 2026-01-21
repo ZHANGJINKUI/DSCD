@@ -39,7 +39,7 @@
 │  │  └─────────────────────────────────────────┘    │    │
 │  └─────────────────────────────────────────────────┘    │
 │                         ↓                               │
-│           Contrastive Decoding: P(safe) - P(toxic)      │
+│Contrastive Decoding: P(toxic)-P(safe) + P(Hallucination)│
 │                         ↓                               │
 │                 Safe Output Generation                  │
 └─────────────────────────────────────────────────────────┘
