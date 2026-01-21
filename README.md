@@ -73,7 +73,7 @@ conda activate dscd
 pip install -r requirements.txt
 ```
 
-> ⚠️ **Important**: This project uses a **modified local version of transformers**. Do NOT install transformers from pip. The local `transformers/` directory contains necessary modifications for early-exit layer support.
+> ⚠️ **Important**: This project uses a **modified local version of transformers**. Do NOT install transformers-4.40.0 from pip. The local `transformers/` directory contains necessary modifications for early-exit layer support.
 
 4. **Download required models**
 
