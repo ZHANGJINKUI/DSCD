@@ -23,27 +23,8 @@ Detoxification in large language models (LLMs) remains a significant research ch
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    DSCD Framework                       │
-├─────────────────────────────────────────────────────────┤
-│                     Input Prompt                        │
-│                          ↓                              │
-│  ┌─────────────────────────────────────────────────┐    │
-│  │               Modified LLaMA Model              │    │
-│  │  ┌─────────────────────────────────────────┐    │    │
-│  │  │  Early Exit Layers (Premature Layers)   │    │    │
-│  │  │  → Layer 0, 2, 4, ... (configurable)    │    │    │
-│  │  └─────────────────────────────────────────┘    │    │
-│  │  ┌─────────────────────────────────────────┐    │    │
-│  │  │  Mature Layer (Final Layer)             │    │    │
-│  │  │  → Layer 32 (default for LLaMA-7B)      │    │    │
-│  │  └─────────────────────────────────────────┘    │    │
-│  └─────────────────────────────────────────────────┘    │
-│                         ↓                               │
-│Contrastive Decoding: P(toxic)-P(safe) + P(Hallucination)│
-│                         ↓                               │
-│                 Safe Output Generation                  │
-└─────────────────────────────────────────────────────────┘
+![DSCD Framework](figures/DSCD_architecture.png)
+
 ```
 
 ## Installation
