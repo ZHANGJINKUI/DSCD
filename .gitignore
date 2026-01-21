@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+log.txt
+logs/
+
+# Large model files (download separately)
+SafeEdit-Safety-Classifier/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Data files (download separately)
+data/
+
+# Results (generated during experiments)
+Result/
+safety_results*/
+*_results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
