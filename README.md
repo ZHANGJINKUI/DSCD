@@ -49,7 +49,7 @@
 
 ### Requirements
 
-- Python >= 3.8
+- Python >= 3.10
 - PyTorch >= 2.0.1
 - CUDA >= 11.7 (for GPU support)
 
@@ -63,7 +63,7 @@ cd DSCD
 
 2. **Create conda environment**
 ```bash
-conda create -n dscd python=3.8
+conda create -n dscd python=3.10
 conda activate dscd
 ```
 
@@ -201,10 +201,28 @@ Results are saved to the specified `--metrics_save_dir`:
 If you use this code, please cite:
 
 ```bibtex
-@article{dscd2024,
-  title={DSCD: Dynamic Safety Contrastive Decoding for LLM Detoxification},
-  author={Your Name},
-  year={2024}
+@inproceedings{dong-etal-2025-dscd,
+    title = "{DSCD}: Large Language Model Detoxification with Self-Constrained Decoding",
+    author = "Dong, Ming  and
+      Zhang, Jinkui  and
+      Zheng, Bolong  and
+      Tu, Xinhui  and
+      Hu, Po  and
+      He, Tingting",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.197/",
+    doi = "10.18653/v1/2025.emnlp-main.197",
+    pages = "3969--3984",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Detoxification in large language models (LLMs) remains a significant research challenge. Existing decoding detoxification methods are all based on external constraints, which require additional resource overhead and lose generation fluency. This work innovatively proposes Detoxification with Self-Constrained Decoding (DSCD), a novel method for LLMs detoxification without parameter fine-tuning. DSCD strengthens the inner token distribution of the safety layer while weakening that of hallucination and toxic layer during output generation. This effectively diminishes toxicity and enhances output safety. DSCD offers lightweight, high compatibility, and plug-and-play capabilities, readily integrating with existing detoxification methods for further performance improvement. Extensive experiments on representative open-source LLMs and public datasets validate DSCD{'}s effectiveness, demonstrating state-of-the-art (SOTA) performance in both detoxification and generation fluency, with superior efficiency compared to existing methods. These results highlight DSCD{'}s potential as a practical and scalable solution for safer LLM deployments."
 }
 ```
 
