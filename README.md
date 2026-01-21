@@ -173,7 +173,6 @@ def greedy_search(
     ...
 ):
     # Contrastive decoding logic
-    # P_final = P_mature - α * P_premature
 ```
 
 ## Evaluation Metrics
