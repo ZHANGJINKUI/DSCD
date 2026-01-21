@@ -23,12 +23,12 @@
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    DSCD Framework                        │
+│                    DSCD Framework                       │
 ├─────────────────────────────────────────────────────────┤
-│  Input Prompt                                            │
-│       ↓                                                  │
+│                     Input Prompt                        │
+│                          ↓                              │
 │  ┌─────────────────────────────────────────────────┐    │
-│  │           Modified LLaMA Model                   │    │
+│  │               Modified LLaMA Model              │    │
 │  │  ┌─────────────────────────────────────────┐    │    │
 │  │  │  Early Exit Layers (Premature Layers)   │    │    │
 │  │  │  → Layer 0, 2, 4, ... (configurable)    │    │    │
@@ -38,10 +38,10 @@
 │  │  │  → Layer 32 (default for LLaMA-7B)      │    │    │
 │  │  └─────────────────────────────────────────┘    │    │
 │  └─────────────────────────────────────────────────┘    │
-│       ↓                                                  │
-│  Contrastive Decoding: P(safe) - P(toxic)               │
-│       ↓                                                  │
-│  Safe Output Generation                                  │
+│                         ↓                               │
+│           Contrastive Decoding: P(safe) - P(toxic)      │
+│                         ↓                               │
+│                 Safe Output Generation                  │
 └─────────────────────────────────────────────────────────┘
 ```
 
