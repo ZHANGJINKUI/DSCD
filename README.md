@@ -15,7 +15,7 @@ Detoxification in large language models (LLMs) remains a significant research ch
 
 ### Key Features
 
-- **Early Exit Layer Contrastive Decoding**: Leverages outputs from multiple transformer layers to contrast safe vs. toxic generation patterns
+- **Early Exit Layer Contrastive Decoding**: Leverages outputs from multiple transformer layers—including safety, toxicity, and hallucination layers—to contrast safe vs. toxic generation patterns and mitigate nonsensical outputs.
 - **DINM Integration**: Combines with DINM model editing for enhanced detoxification
 - **Flexible Layer Selection**: Supports configurable premature and mature layer combinations
 - **Comprehensive Evaluation**: Includes safety classification and fluency metrics
