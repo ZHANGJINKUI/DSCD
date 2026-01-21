@@ -78,7 +78,7 @@ pip install -r requirements.txt
 4. **Download required models**
 
 - **LLaMA-2-7B-Chat**: Download from [HuggingFace](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
-- **Safety Classifier**: `[zjunlp/SafeEdit-Safety-Classifier](https://huggingface.co/zjunlp/SafeEdit-Safety-Classifier)`
+- **Safety Classifier**: [zjunlp/SafeEdit-Safety-Classifier](https://huggingface.co/zjunlp/SafeEdit-Safety-Classifier)
 
 ## Project Structure
 
