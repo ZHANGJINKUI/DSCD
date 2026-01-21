@@ -183,7 +183,7 @@ The framework evaluates:
 |--------|-------------|
 | **DS** | Defense Success rate |
 | **DG_onlyQ** | Defense Generalization (question only) |
-| **DG_otherA** | Defense Generalization (other answers) |
+| **DG_otherA** | Defense Generalization (other adversarial prompts) |
 | **DG_otherQ** | Defense Generalization (other questions) |
 | **DG_otherAQ** | Defense Generalization (other Q&A) |
 | **Fluency** | N-gram entropy based fluency |
