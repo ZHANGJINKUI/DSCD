@@ -23,9 +23,7 @@ Detoxification in large language models (LLMs) remains a significant research ch
 ## Architecture
 
 ```
-<p align="center">
-  <img src="figures/DSCD_architecture.png" alt="DSCD Framework"/>
-</p>
+![DSCD Framework](figures/DSCD_architecture.png)
 ```
 
 ## Installation
