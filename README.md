@@ -10,7 +10,8 @@
 
 ## Overview
 
-**DSCD (Dynamic Safety Contrastive Decoding)** is a novel decoding strategy for detoxifying Large Language Models (LLMs). It combines early-exit layer contrastive decoding with the DINM (Detoxifying In-Network Modulation) editing method to enhance LLM safety while preserving generation quality.
+**DSCD (Dynamic Safety Contrastive Decoding)** 
+Detoxification in large language models (LLMs) remains a significant research challenge. Existing decoding detoxification methods are all based on external constraints, which require additional resource overhead and lose generation fluency. This work innovatively proposes Detoxification with Self-Constrained Decoding (DSCD), a novel method for LLMs detoxification without parameter fine-tuning. DSCD strengthens the inner token distribution of the safety layer while weakening that of hallucination and toxic layer during output generation. This effectively diminishes toxicity and enhances output safety. DSCD offers lightweight, high compatibility, and plug-and-play capabilities, readily integrating with existing detoxification methods for further performance improvement. Extensive experiments on representative open-source LLMs and public datasets validate DSCD’s effectiveness, demonstrating state-of-the-art (SOTA) performance in both detoxification and generation fluency, with superior efficiency compared to existing methods. These results highlight DSCD’s potential as a practical and scalable solution for safer LLM deployments.
 
 ### Key Features
 
